@@ -10,6 +10,7 @@ namespace FormsAuthenticationDemo.Controllers
     {
         public ActionResult Index()
         {
+            var user = HttpContext.User.Identity;
             return View();
         }
 
